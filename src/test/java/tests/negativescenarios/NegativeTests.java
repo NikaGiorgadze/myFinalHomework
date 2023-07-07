@@ -32,7 +32,7 @@ public class NegativeTests extends Runner {
         Assert.assertEquals(loginPage.getErrorMessageColor(), "rgba(226, 35, 26, 1)");
     }
 
-    @Test(priority = 4, invocationCount = 1, enabled = true, testName = "Checkout გვერდზე არ ვავსებთ სახელის ველს")
+    @Test(priority = 2, invocationCount = 1, enabled = true, testName = "Checkout გვერდზე არ ვავსებთ სახელის ველს")
     @Description("Checkout გვერდზე არ ვავსებთ სახელის ველს")
     @Severity(SeverityLevel.BLOCKER)
     @Link("https://www.saucedemo.com/")
@@ -58,7 +58,7 @@ public class NegativeTests extends Runner {
         Assert.assertEquals(checkoutPage.getErrorText(), "Error: First Name is required");
     }
 
-    @Test(priority = 2, invocationCount = 1, enabled = false, testName = "Checkout გვერდზე არ ვავსებთ საფოსტო კოდის ველს")
+    @Test(priority = 3, invocationCount = 1, enabled = false, testName = "Checkout გვერდზე არ ვავსებთ საფოსტო კოდის ველს")
     @Description("Checkout გვერდზე არ ვავსებთ საფოსტო კოდს ველს")
     @Severity(SeverityLevel.BLOCKER)
     @Link("https://www.saucedemo.com/")
