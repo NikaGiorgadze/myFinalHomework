@@ -21,7 +21,7 @@ public class NegativeTests extends Runner {
     @Link("https://www.saucedemo.com/")
     public void setIncorrectPasswordOrUserName() {
         LoginPage loginPage = new LoginPage(driver, wait);
-        loginPage.login("standard_user", "123");
+        loginPage.login(LoginData.userName, LoginData.invalidPassword);
         loginPage.clickLoginButton();
         //verify that after set only userName both userName and password input must be red and
         // red error h3 element must be displayed
